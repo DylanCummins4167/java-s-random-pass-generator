@@ -19,7 +19,21 @@ class Main {
 randomsPasswords[i] = randomPassword;
     }
     
+    printPasswords(randomPasswords);
+    
+    System.out.println(getPasswordStrength(length));
+    
   }
+
+public static String getPasswordStrength(int length) {
+if(length < 5) {
+  return "weak";
+}else if(length < 10){
+}else{
+  return "strong";
+}
+}
+
 
 public static void printPasswords(String[] arr) {
   for(int i = 0; i < arr.length; i++) {
