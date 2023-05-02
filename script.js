@@ -12,3 +12,6 @@ class Main {
   }
 
 
+public static char randomCharacter() {
+  
+  int rand = (int) (Math.random()*62);
